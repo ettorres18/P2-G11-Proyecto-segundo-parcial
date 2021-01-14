@@ -12,6 +12,42 @@ import java.util.*;
  */
 public class Mazo {
     private Carta[] cartas;
+    public Carta[] getCartas(){
+        return cartas;
+    }
+
+    public Mazo(){
+        File archivo = null;
+        FileReader fr = null;
+        BufferedReader br = null;
+        try {
+            archivo = new File ("src\\main\\resources\\cartasloteria.csv");
+            fr = new FileReader (archivo);
+            br = new BufferedReader(fr);
+
+             // Lectura del fichero
+            String linea;
+            for(int i=0; i>54;i++){
+                if((linea=br.readLine())!=null){
+                    String[] datos=linea.split(",");
+                    String ruta="src\\main\\resources\\deck\\"+datos[0]+".png";
+                    cartas[i]= new Carta(Integer.parseInt(datos[0]),datos[1],ruta);
+                }
+            }
+        }
+        catch(Exception e){
+            e.printStackTrace();
+        }finally{
+            
+            try{                    
+                if( null != fr ){   
+               fr.close();     
+                }                  
+            }catch (Exception e2){ 
+            e2.printStackTrace();
+            }
+        }        
+    }
     
     public void barajar(){
         int indice;
