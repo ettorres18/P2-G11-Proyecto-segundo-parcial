@@ -28,6 +28,6 @@ public class Configuracion {
         this.visible = visible;
     }
     public Configuracion getNumOponentes(){
-        return numOponentes
+        return numOponentes;
     }
 }
