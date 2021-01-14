@@ -20,13 +20,10 @@ public class Configuracion {
         this.visible = visible;
         this.numOponentes = numOponentes
     }
-    public boolean isVisible(){
+    public boolean Visible(){
         return visible;
     }
-    
-    public void setVisible(boolean visible){
-        this.visible = visible;
-    }
+   
     public Configuracion getNumOponentes(){
         return numOponentes;
     }
