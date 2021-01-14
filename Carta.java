@@ -11,7 +11,7 @@ import java.util.*;
  *
  * @author alecs
  */
-public class CARTA {
+public class Carta {
     private int numero;
     private String nombre;
     private String rutaImagen;
