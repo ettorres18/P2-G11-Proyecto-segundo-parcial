@@ -21,6 +21,6 @@ public class Juego {
     private ArrayList<Carta> cartasJugadas;
     private Alineacion alineacion;
     
-    public reificarJuego(){
+    public verificarJuego(){
     }
 }
