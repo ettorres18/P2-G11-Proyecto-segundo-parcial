@@ -27,4 +27,7 @@ public class Configuracion {
     public void setVisible(boolean visible){
         this.visible = visible;
     }
+    public Configuracion getNumOponentes(){
+        return numOponentes
+    }
 }
