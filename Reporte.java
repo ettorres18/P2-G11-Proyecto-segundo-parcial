@@ -15,14 +15,14 @@ public class Reporte{
     private Juego fecha;
     private Juego duracion;
     private Juego ganador;
-    private Juego jugadores;
+    private Configuracion numOponentes;
     private Juego alineacion;
     
-    public Reporte(Juego fecha, Juego duracion, Juego ganador, Juego jugadores, Juego alineacion){
+    public Reporte(Juego fecha, Juego duracion, Juego ganador, Configuracion numOponentes, Juego alineacion){
         this.fecha = fecha;
         this.duracion = duracion;
         this.ganador = ganador;
-        this.jugadores = jugadores;
+        this.numOponentes = numOponentes;
         this.alineacion = alineacion;
     }
     
@@ -35,8 +35,8 @@ public class Reporte{
     public Juego getGanador() {
         return ganador;
     }
-    public Juego getJugadores() {
-        return jugadores;
+    public Juego getNumOponentes() {
+        return numOponentes;
     }
     public Juego getAlineacion() {
         return alineacion;
