@@ -16,7 +16,7 @@ public class CARTA {
     private String nombre;
     private String rutaImagen;
     
-    public Producto (int numero, String nombre, String rutaImagen) {
+    public Carta (int numero, String nombre, String rutaImagen) {
         this.numero = numero;
         this.nombre = nombre;
         this.rutaImagen = rutaImagen;
